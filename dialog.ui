@@ -26,7 +26,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>棒読みちゃん読み上げプラグイン　設定</string>
+   <string>BouyomiChanTS3 Config Dialog</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
@@ -59,8 +59,11 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
    <property name="text">
-    <string>自分の発言も読み上げる</string>
+    <string>Read myself.</string>
    </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
@@ -73,7 +76,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>読み上げ対象テキストメッセージ</string>
+    <string>target text message</string>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -88,21 +91,21 @@
      <item>
       <widget class="QCheckBox" name="cbTextMessageTargetModeChannel">
        <property name="text">
-        <string>チャンネル</string>
+        <string>channel</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QCheckBox" name="cbTextMessageTargetModeClient">
        <property name="text">
-        <string>クライアント</string>
+        <string>client</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QCheckBox" name="cbTextMessageTargetModeServer">
        <property name="text">
-        <string>サーバ</string>
+        <string>server</string>
        </property>
       </widget>
      </item>
