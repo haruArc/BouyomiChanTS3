@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += widgets network
+QT       += widgets network sql
 
 TARGET = BouyomiChanTS3
 TEMPLATE = lib

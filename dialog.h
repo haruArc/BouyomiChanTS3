@@ -1,26 +1,26 @@
-#ifndef DIALOG_H
-#define DIALOG_H
+#ifndef BouyomiConfigDialog_H
+#define BouyomiConfigDialog_H
 
 #include <QDialog>
 
 namespace Ui {
-class Dialog;
+class BouyomiConfigDialog;
 }
 
-class Dialog : public QDialog
+class BouyomiConfigDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Dialog(QWidget *parent = 0);
-    ~Dialog();
+    explicit BouyomiConfigDialog(QWidget *parent = 0);
+    ~BouyomiConfigDialog();
 
 private:
-    Ui::Dialog *ui;
+    Ui::BouyomiConfigDialog *ui;
 
 private slots:
     void accept();
     void reject();
 };
 
-#endif // DIALOG_H
+#endif // BouyomiConfigDialog_H

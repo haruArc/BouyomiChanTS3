@@ -3,9 +3,9 @@
 #include <QtCore/QSettings>
 #include "globals.h"
 
-Dialog::Dialog(QWidget *parent) :
+BouyomiConfigDialog::BouyomiConfigDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::Dialog)
+    ui(new Ui::BouyomiConfigDialog)
 {
     ui->setupUi(this);
 
@@ -16,12 +16,12 @@ Dialog::Dialog(QWidget *parent) :
     ui->cbTextMessageTargetModeServer->setChecked(cfg.value("textMessageTargetModeServer", DEFAULTCONFIG_TEXTMESSAGETARGETMODESERVER).toBool());
 }
 
-Dialog::~Dialog()
+BouyomiConfigDialog::~BouyomiConfigDialog()
 {
     delete ui;
 }
 
-void Dialog::accept() {
+void BouyomiConfigDialog::accept() {
 
     QSettings cfg(QString::fromStdString(Globals::getConfigFilePath()), QSettings::IniFormat);
     cfg.setValue("sendToMyself", ui->checkBox->checkState());
@@ -39,6 +39,6 @@ void Dialog::accept() {
     QDialog::accept();
 }
 
-void Dialog::reject() {
+void BouyomiConfigDialog::reject() {
     QDialog::reject();
 }
